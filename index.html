@@ -5,9 +5,13 @@
         <title>New webpage</title>
     </head>
     <button onclick = "play()">Play</button>
+    <audio id = "audio" src = "Audio.mp3"></audio>
+    <video controls="" autoplay="" name="media">
+        <source src="https://user.github.io/project/audio/Audio.mp3" type="audio/mp3">
+    </video>
     <body>
 <script>
-var audio = new Audio('https://github.com/user/project/blob/main/audio/Audio.mp3?raw=true');
+var audio = document.getElementById("audio");
 
 audio.loop = true; 
 function play() {
