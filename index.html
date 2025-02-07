@@ -5,13 +5,15 @@
         <title>New webpage</title>
     </head>
     <audio id="myAudio" src="MCAcapellaVideo (1) (audio-extractor.net).mp3"></audio>
+    <button oncick = "play">Play</button>
     <body>
 <script>
 const audio = document.getElementById("myAudio"); 
 
 audio.loop = true; 
-
-audio.play(); 
+function play() {
+    audio.play(); 
+}
 </script>
 
     </body>
