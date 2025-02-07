@@ -4,11 +4,10 @@
         <meta charset="utf-8">
         <title>New webpage</title>
     </head>
-    <audio id="myAudio" src="Audio.mp3"></audio>
     <button oncick = "play">Play</button>
     <body>
 <script>
-const audio = document.getElementById("myAudio"); 
+var audio = new Audio('https://github.com/user/project/blob/main/audio/Audio.mp3?raw=true');
 
 audio.loop = true; 
 function play() {
